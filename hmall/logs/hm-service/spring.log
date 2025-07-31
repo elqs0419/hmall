@@ -1776,3 +1776,19 @@ com.hmall.common.exception.BizIllegalException: 用户密码错误
 10:53:16:103 DEBUG 55356 --- [http-nio-8081-exec-7] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? , ? )
 10:53:16:123 DEBUG 55356 --- [http-nio-8081-exec-7] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 100002672302(Long), 100002624500(Long), 100002533430(Long)
 10:53:16:149 DEBUG 55356 --- [http-nio-8081-exec-7] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 3
+10:57:23:488  INFO 55356 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+10:57:23:515  INFO 55356 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+11:05:26:963  INFO 59948 --- [main] com.hmall.HMallApplication               : Starting HMallApplication using Java 11.0.28 on LAPTOP-FBJ2DATM with PID 59948 (D:\ccode\java_code\hmall\hmall\hmall\hm-service\target\classes started by ASUS in D:\ccode\java_code\hmall\hmall\hmall)
+11:05:26:964 DEBUG 59948 --- [main] com.hmall.HMallApplication               : Running with Spring Boot v2.7.12, Spring v5.3.27
+11:05:26:964  INFO 59948 --- [main] com.hmall.HMallApplication               : The following 1 profile is active: "local"
+11:05:27:769  INFO 59948 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+11:05:27:771  INFO 59948 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11:05:27:805  INFO 59948 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+11:05:28:408  INFO 59948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+11:05:28:559  INFO 59948 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1556 ms
+11:05:31:018  INFO 59948 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+11:05:31:497  INFO 59948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+11:05:31:498  INFO 59948 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+11:05:31:501  INFO 59948 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+11:05:31:533  INFO 59948 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+11:05:31:711  INFO 59948 --- [main] com.hmall.HMallApplication               : Started HMallApplication in 5.17 seconds (JVM running for 6.623)
